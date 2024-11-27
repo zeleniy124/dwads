@@ -1,0 +1,37 @@
+<!-- views/thread.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thread Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Thread Details</h1>
+
+    <section id="thread-details">
+        <h2 id="thread-title"></h2>
+        <p id="thread-content"></p>
+        <p><strong>Author (Session ID):</strong> <span id="thread-author"></span></p>
+        <p><strong>Created At:</strong> <span id="thread-createdAt"></span></p>
+    </section>
+
+    <section id="add-post">
+        <h3>Add a Post</h3>
+        <form id="post-form">
+            <textarea id="post-content" placeholder="Your Post" required></textarea><br>
+            <button type="submit">Add Post</button>
+        </form>
+    </section>
+
+    <section id="posts">
+        <h3>Posts</h3>
+        <ul id="post-list"></ul>
+    </section>
+
+    <a href="/">Back to Home</a>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

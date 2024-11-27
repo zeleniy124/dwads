@@ -1,0 +1,281 @@
+/* public/css/styles.css */
+
+body {
+    font-family: monospace; /* Clean, modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e12; /* Dark background color */
+    color: #d7dbe0; /* Light text color */
+}
+
+h1, h2, h3, h4 {
+    color: #d7dbe0;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #1a1d23; /* Dark section background */
+    border-radius: 10px;
+    color: #d7dbe0;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Subtle border */
+    border-radius: 5px;
+    background-color: #1a1d23;
+    color: #d7dbe0;
+}
+
+form input[type="text"]::placeholder {
+    color: #7a7e86; /* Placeholder text color */
+}
+
+form button {
+    padding: 10px 15px;
+    background: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #1a1d23;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #d7dbe0;
+}
+
+a {
+    color: #00d8ff; /* Bright blue for links */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Form and Links Section */
+/* Create Thread Container */
+/* Row Layout for Create Thread and Links */
+#create-thread-container {
+    flex: 4;
+    background-color: #1a1d23;
+    padding: 20px;
+    border-radius: 10px;
+    color: #d7dbe0;
+    margin: 0px;
+}
+
+#links-box {
+    flex: 1;
+    background-color: #1a1d23;
+    padding: 20px;
+    border-radius: 10px;
+    color: #d7dbe0;
+    text-align: center;
+    height: 210px;;
+}
+
+#links-box h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #86EFAC; /* Yellow heading */
+}
+
+#links-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#links-box a {
+    color: #00d8ff; /* Bright blue links */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#links-box a:hover {
+    color: #00a6cc; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+
+
+#create-thread {
+    flex: 4;
+}
+
+
+
+/* Thread Container */
+.thread-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    flex-direction: row;
+}
+
+/* Thread Card */
+/* Thread Card */
+.thread-card {
+    background: #1a1d23; /* Dark card background */
+    border: 1px solid #333; /* Subtle border for contrast */
+    border-radius: 10px;
+    padding: 20px; /* Increased padding for more whitespace inside the card */
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    color: #d7dbe0;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Added gap between child elements */
+}
+
+.thread-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.thread-card h3 {
+    color: #86EFAC; /* Highlighted yellow title */
+    font-size: 18px;
+    margin: 0 0 10px; /* Added bottom margin for spacing */
+}
+
+.thread-card p {
+    margin: 0 0 10px; /* Added bottom margin for spacing */
+    color: #a6a9ae;
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+.thread-card .creator {
+    color: #7de68d; /* Bright green for creator text */
+    font-size: 14px;
+}
+
+.view-button {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0); /* Bright blue button */
+    color: #00d8ff;
+    padding: 10px 15px; /* Increased padding for a larger button */
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px; /* Spacing between button and other elements */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.view-button:hover {
+    background-color: #00a6cc; /* Darker blue on hover */
+}
+
+.thread-card p {
+    margin: 5px 0;
+    color: #a6a9ae;
+}
+
+.thread-card .creator {
+    color: #7de68d; /* Bright green for creator text */
+}
+
+.view-button {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0); /* Bright blue button */
+    color: #00d8ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.view-button:hover {
+    background-color: #00a6cc; /* Darker blue on hover */
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 15px;
+    padding-left: 20px;
+    border-left: 2px solid #444;
+    color: #a6a9ae;
+}
+
+.comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-item {
+    background: #292c33; /* Slightly lighter dark background */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #d7dbe0;
+}
+
+.add-comment-form textarea {
+    resize: vertical;
+    height: 60px;
+    background: #1a1d23;
+    border: 1px solid #444;
+    color: #d7dbe0;
+    border-radius: 5px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #d7dbe0;
+}
+
+.filters label {
+    color: #a6a9ae;
+}
+
+.filters input {
+    margin-right: 5px;
+}
+
+.filters select {
+    background: #1a1d23;
+    color: #d7dbe0;
+    border: 1px solid #444;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thread-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thread-card {
+        width: 100%;
+    }
+}

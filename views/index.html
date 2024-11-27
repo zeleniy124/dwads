@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thread App - Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">CA: </h1>
+    
+    <!-- Row Layout for Create Thread and Links -->
+    <div style="display: flex; flex-direction: row; gap: 20px; margin: 20px;">
+        
+        <!-- Create Thread Form -->
+        <section id="create-thread-container" style="flex: 4; background-color: #1a1d23; padding: 20px; border-radius: 10px; color: #d7dbe0;">
+            <h2>Create a New Confession</h2>
+            <form id="thread-form">
+                <input type="text" id="title" placeholder="Thread Title" required style="width: 50%; margin-bottom: 20px; margin-top: 20px; padding: 10px; border-radius: 5px; background-color: #333; color: #d7dbe0; border: 1px solid #444;"><br>
+                <textarea id="content" placeholder="Thread Content" required style="width: 50%; margin-bottom: 20px; padding: 10px; border-radius: 5px; background-color: #333; color: #d7dbe0; border: 1px solid #444;"></textarea><br>
+                <button type="submit" style="padding: 10px 15px; background-color: #00d8ff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Create Thread</button>
+            </form>
+        </section>
+
+        <!-- Quick Links -->
+        <div id="links-box" style="flex: 1; background-color: #1a1d23; padding: 20px; border-radius: 10px; color: #d7dbe0; text-align: center;">
+            <h3 style="margin-bottom: 20px; font-size: 16px; color: #ffcc00;"></h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                <li><a href="#" style="color: #86EFAC; text-decoration: none; font-size: 14px;">[Twitter]</a></li>
+                <li><a href="#" style="color: #86EFAC; text-decoration: none; font-size: 14px;">[Buy]</a></li>
+                <li><a href="#" style="color: #86EFAC; text-decoration: none; font-size: 14px;">[Telegram]</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Threads Section -->
+    <section id="threads">
+        <h2 style="text-align: center; margin-bottom: 20px;">All Confessions</h2>
+        <div id="thread-container" class="thread-container"></div>
+    </section>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
