@@ -21,6 +21,14 @@ app.use(cors());
 // Serve Static Files
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/views', express.static(path.join(__dirname, 'views')));
+app.use(
+    session({
+        secret: 'your-secret-key', // Replace with a secure key
+        resave: false,
+        saveUninitialized: true,
+        cookie: { secure: false }, // Set to true if using HTTPS
+    })
+);
 
 // Helper Functions
 const getThreads = () => {
